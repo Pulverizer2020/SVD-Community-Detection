@@ -1,7 +1,8 @@
 # SVD Community Detection Algorithm (SVD-CDA)
 
-[a relative link](images/facebook-data-communities-1)
-[a relative link](images/zachary-data-communities)
+<img width="767" alt="facebook-data-communities-1" src="https://user-images.githubusercontent.com/64996411/167320683-b3e01d90-89e9-47af-8199-fa31584d3d5e.png">
+<img width="436" alt="zachary-data-communities" src="https://user-images.githubusercontent.com/64996411/167320688-c8987f9b-87b0-4e05-bccf-343ecd297ce5.png">
+
 
 SVD-CDA is an algorithm for detecting community structure within a social network. This algorithm takes in an adjacency matrix representing an undirected unweighted graph and returns community labels for nodes in the graph.
 
@@ -15,7 +16,8 @@ The SVD of the adjacency matrix is A=USVt, which is equivalent to AV=US. A is an
 
 The algorithm then uses a k-means clustering algorithm on the rows of AV to find k communities. k is determined by ploting the values of sigma by descending magnitude and choosing the k most significant sigmas as the number of communities. This is an intentionally subjective choice: there is no ground truth for community structure within most datasets. The sigma value plotting acts as a tool for choosing the number of communities.
 
-[a relative link](images/facebook-data-singular-values)
+<img width="658" alt="facebook-data-singular-values" src="https://user-images.githubusercontent.com/64996411/167320695-5216a56b-70d7-4a4e-a9a3-dafac2bb456f.png">
+
 
 ## Other Improvements
 
